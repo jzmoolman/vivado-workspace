@@ -1,7 +1,7 @@
 [
   {
     "class":"firrtl.options.TargetDirAnnotation",
-    "directory":"/Users/zach/src/vivado-risc-v/workspace/Rocket64x1/system-genesys2"
+    "directory":"/Users/zach/src/vivado-risc-v/workspace/rocket64x1/system-genesys2"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -137,10 +137,6 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_8"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.TLXbar_7"
   },
   {
@@ -162,6 +158,38 @@
   {
     "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.BundleBridgeNexus_5"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLXbar_8"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLBuffer_8"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLWidthWidget_9"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLInterconnectCoupler_15"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.ClockGroupAggregator_6"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.ClockGroup_6"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.FixedClockBroadcast_6"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_6"
   },
   {
     "class":"freechips.rocketchip.util.RegFieldDescMappingAnnotation",
@@ -466,15 +494,11 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_9"
+    "target":"RocketSystem.TLWidthWidget_10"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_15"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_6"
+    "target":"RocketSystem.TLInterconnectCoupler_16"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -502,15 +526,11 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_10"
+    "target":"RocketSystem.BundleBridgeNexus_13"
   },
   {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|BoomMSHR>io.mem_acquire.bits.ee"
-  },
-  {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|BoomMSHR_1>io.mem_acquire.bits.ee"
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLWidthWidget_11"
   },
   {
     "class":"freechips.rocketchip.util.SRAMAnnotation",
@@ -551,10 +571,6 @@
     "depth":512,
     "description":"Non-blocking DCache Data Array",
     "write_mask_granularity":64
-  },
-  {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|BoomMSHRFile>io.mem_acquire.bits.ee"
   },
   {
     "class":"freechips.rocketchip.util.SRAMAnnotation",
@@ -628,7 +644,23 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_11"
+    "target":"RocketSystem.TLWidthWidget_12"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|MMC>csr_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|MMC>csr_cmd"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|MMC>csr_wdata"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLWidthWidget_13"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -1104,7 +1136,7 @@
   },
   {
     "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|LSU>exe_tlb_ee"
+    "target":"~RocketSystem|NBDTLB>io.resp[0].ee"
   },
   {
     "class":"freechips.rocketchip.util.SRAMAnnotation",
@@ -1132,35 +1164,35 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.FixedClockBroadcast_6"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_13"
-  },
-  {
-    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_14.nodeIn.group",
-    "typeName":"freechips.rocketchip.util.TraceItype",
-    "fields":[
-      [
-        "itype"
-      ]
-    ]
-  },
-  {
-    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_14.auto.in.group",
-    "typeName":"freechips.rocketchip.util.TraceItype",
-    "fields":[
-      [
-        "itype"
-      ]
-    ]
+    "target":"RocketSystem.FixedClockBroadcast_7"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.BundleBridgeNexus_14"
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_15.nodeIn.group",
+    "typeName":"freechips.rocketchip.util.TraceItype",
+    "fields":[
+      [
+        "itype"
+      ]
+    ]
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_15.auto.in.group",
+    "typeName":"freechips.rocketchip.util.TraceItype",
+    "fields":[
+      [
+        "itype"
+      ]
+    ]
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_15"
   },
   {
     "class":"freechips.rocketchip.util.ParamsAnnotation",
@@ -2052,11 +2084,11 @@
   },
   {
     "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|BundleBridgeNexus_15>outputs_0"
+    "target":"~RocketSystem|BundleBridgeNexus_16>outputs_0"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_16"
+    "target":"RocketSystem.BundleBridgeNexus_17"
   },
   {
     "class":"freechips.rocketchip.util.RegFieldDescMappingAnnotation",
