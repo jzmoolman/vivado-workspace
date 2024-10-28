@@ -5,4 +5,4 @@ set rocket_module_name Rocket64x1
 set riscv_clock_frequency 50.0
 set memory_size 0x40000000
 cd [file dirname [file normalize [info script]]]
-source ../../testbench/genesys2/tb-vivado.tcl
+source ../../testbench/tb-vivado.tcl

@@ -37,14 +37,6 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_2"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_2"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.TLInterconnectCoupler_3"
   },
   {
@@ -97,7 +89,7 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_7"
+    "target":"RocketSystem.TLBuffer_6"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -105,7 +97,7 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_8"
+    "target":"RocketSystem.TLInterconnectCoupler_7"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -113,7 +105,7 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_11"
+    "target":"RocketSystem.TLInterconnectCoupler_10"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -137,11 +129,62 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLBuffer_8"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.TLXbar_7"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.TLWidthWidget_8"
+  },
+  {
+    "class":"freechips.rocketchip.util.RegFieldDescMappingAnnotation",
+    "target":"RocketSystem.TLMemoryEncryptionController",
+    "regMappingSer":{
+      "displayName":"TLMemoryEncryptionController",
+      "deviceName":"TLMemoryEncryptionController",
+      "baseAddress":33619968,
+      "regFields":[
+        {
+          "byteOffset":"0x0",
+          "bitOffset":0,
+          "bitWidth":64,
+          "name":"unnamedRegField0_0",
+          "resetValue":0,
+          "accessType":"None",
+          "wrType":"None",
+          "rdAction":"None",
+          "desc":"None",
+          "group":"None",
+          "groupDesc":"None",
+          "volatile":false,
+          "hasReset":false,
+          "enumerations":{
+            
+          }
+        },
+        {
+          "byteOffset":"0x8",
+          "bitOffset":0,
+          "bitWidth":64,
+          "name":"unnamedRegField8_0",
+          "resetValue":0,
+          "accessType":"None",
+          "wrType":"None",
+          "rdAction":"None",
+          "desc":"None",
+          "group":"None",
+          "groupDesc":"None",
+          "volatile":false,
+          "hasReset":false,
+          "enumerations":{
+            
+          }
+        }
+      ]
+    }
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -161,11 +204,7 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLXbar_8"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_8"
+    "target":"RocketSystem.TLJbar"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -173,332 +212,11 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_15"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.ClockGroupAggregator_6"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.ClockGroup_6"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.FixedClockBroadcast_6"
+    "target":"RocketSystem.TLInterconnectCoupler_16"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.BundleBridgeNexus_6"
-  },
-  {
-    "class":"freechips.rocketchip.util.RegFieldDescMappingAnnotation",
-    "target":"RocketSystem.InclusiveCache",
-    "regMappingSer":{
-      "displayName":"InclusiveCache",
-      "deviceName":"InclusiveCache",
-      "baseAddress":33619968,
-      "regFields":[
-        {
-          "byteOffset":"0x0",
-          "bitOffset":0,
-          "bitWidth":8,
-          "name":"Banks",
-          "resetValue":1,
-          "accessType":"R",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Number of banks in the cache",
-          "group":"Config",
-          "groupDesc":"Information about the Cache Configuration",
-          "volatile":false,
-          "hasReset":true,
-          "enumerations":{
-            
-          }
-        },
-        {
-          "byteOffset":"0x0",
-          "bitOffset":8,
-          "bitWidth":8,
-          "name":"Ways",
-          "resetValue":8,
-          "accessType":"R",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Number of ways per bank",
-          "group":"Config",
-          "groupDesc":"None",
-          "volatile":false,
-          "hasReset":true,
-          "enumerations":{
-            
-          }
-        },
-        {
-          "byteOffset":"0x0",
-          "bitOffset":16,
-          "bitWidth":8,
-          "name":"lgSets",
-          "resetValue":10,
-          "accessType":"R",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Base-2 logarithm of the sets per bank",
-          "group":"Config",
-          "groupDesc":"None",
-          "volatile":false,
-          "hasReset":true,
-          "enumerations":{
-            
-          }
-        },
-        {
-          "byteOffset":"0x0",
-          "bitOffset":24,
-          "bitWidth":8,
-          "name":"lgBlockBytes",
-          "resetValue":6,
-          "accessType":"R",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Base-2 logarithm of the bytes per cache block",
-          "group":"Config",
-          "groupDesc":"None",
-          "volatile":false,
-          "hasReset":true,
-          "enumerations":{
-            
-          }
-        },
-        {
-          "byteOffset":"0x200",
-          "bitOffset":0,
-          "bitWidth":64,
-          "name":"Flush64",
-          "resetValue":0,
-          "accessType":"W",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Flush the phsyical address equal to the 64-bit written data from the cache",
-          "group":"None",
-          "groupDesc":"None",
-          "volatile":false,
-          "hasReset":false,
-          "enumerations":{
-            
-          }
-        },
-        {
-          "byteOffset":"0x240",
-          "bitOffset":0,
-          "bitWidth":32,
-          "name":"Flush32",
-          "resetValue":0,
-          "accessType":"W",
-          "wrType":"None",
-          "rdAction":"None",
-          "desc":"Flush the physical address equal to the 32-bit written data << 4 from the cache",
-          "group":"None",
-          "groupDesc":"None",
-          "volatile":false,
-          "hasReset":false,
-          "enumerations":{
-            
-          }
-        }
-      ]
-    }
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.Directory.cc_dir",
-    "address_width":10,
-    "name":"cc_dir",
-    "data_width":176,
-    "depth":1024,
-    "description":"Directory RAM",
-    "write_mask_granularity":22
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_0",
-    "address_width":12,
-    "name":"cc_banks_0",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_1",
-    "address_width":12,
-    "name":"cc_banks_1",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_2",
-    "address_width":12,
-    "name":"cc_banks_2",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_3",
-    "address_width":12,
-    "name":"cc_banks_3",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_4",
-    "address_width":12,
-    "name":"cc_banks_4",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_5",
-    "address_width":12,
-    "name":"cc_banks_5",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_6",
-    "address_width":12,
-    "name":"cc_banks_6",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_7",
-    "address_width":12,
-    "name":"cc_banks_7",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_8",
-    "address_width":12,
-    "name":"cc_banks_8",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_9",
-    "address_width":12,
-    "name":"cc_banks_9",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_10",
-    "address_width":12,
-    "name":"cc_banks_10",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_11",
-    "address_width":12,
-    "name":"cc_banks_11",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_12",
-    "address_width":12,
-    "name":"cc_banks_12",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_13",
-    "address_width":12,
-    "name":"cc_banks_13",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_14",
-    "address_width":12,
-    "name":"cc_banks_14",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"freechips.rocketchip.util.SRAMAnnotation",
-    "target":"RocketSystem.BankedStore.cc_banks_15",
-    "address_width":12,
-    "name":"cc_banks_15",
-    "data_width":64,
-    "depth":4096,
-    "description":"Banked Store",
-    "write_mask_granularity":64
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLFilter"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_10"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLJbar"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_10"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLInterconnectCoupler_16"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
@@ -526,11 +244,7 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_13"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_11"
+    "target":"RocketSystem.TLWidthWidget_10"
   },
   {
     "class":"freechips.rocketchip.util.SRAMAnnotation",
@@ -644,31 +358,31 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLWidthWidget_11"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|EPMP>csr_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|EPMP>csr_cmd"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|EPMP>csr_wdata"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.TLWidthWidget_12"
   },
   {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|MMC>csr_addr"
-  },
-  {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|MMC>csr_cmd"
-  },
-  {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|MMC>csr_wdata"
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.TLBuffer_9"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLWidthWidget_13"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_11"
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.TLBuffer_12"
+    "target":"RocketSystem.TLBuffer_10"
   },
   {
     "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
@@ -1084,10 +798,6 @@
   },
   {
     "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|NBDTLB>ee_array[0]"
-  },
-  {
-    "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~RocketSystem|LSU>will_fire_load_incoming_0_will_fire"
   },
   {
@@ -1135,10 +845,6 @@
     "target":"~RocketSystem|LSU>will_fire_store_commit_0_will_fire"
   },
   {
-    "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|NBDTLB>io.resp[0].ee"
-  },
-  {
     "class":"freechips.rocketchip.util.SRAMAnnotation",
     "target":"RocketSystem.PTW.l2_tlb_ram",
     "address_width":9,
@@ -1164,35 +870,35 @@
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.FixedClockBroadcast_7"
+    "target":"RocketSystem.FixedClockBroadcast_6"
+  },
+  {
+    "class":"firrtl.passes.InlineAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_13"
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_14.nodeIn.group",
+    "typeName":"freechips.rocketchip.util.TraceItype",
+    "fields":[
+      [
+        "itype"
+      ]
+    ]
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
+    "target":"RocketSystem.BundleBridgeNexus_14.auto.in.group",
+    "typeName":"freechips.rocketchip.util.TraceItype",
+    "fields":[
+      [
+        "itype"
+      ]
+    ]
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
     "target":"RocketSystem.BundleBridgeNexus_14"
-  },
-  {
-    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_15.nodeIn.group",
-    "typeName":"freechips.rocketchip.util.TraceItype",
-    "fields":[
-      [
-        "itype"
-      ]
-    ]
-  },
-  {
-    "class":"chisel3.experimental.EnumAnnotations$EnumVecAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_15.auto.in.group",
-    "typeName":"freechips.rocketchip.util.TraceItype",
-    "fields":[
-      [
-        "itype"
-      ]
-    ]
-  },
-  {
-    "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_15"
   },
   {
     "class":"freechips.rocketchip.util.ParamsAnnotation",
@@ -2084,11 +1790,11 @@
   },
   {
     "class":"firrtl.transforms.DontTouchAnnotation",
-    "target":"~RocketSystem|BundleBridgeNexus_16>outputs_0"
+    "target":"~RocketSystem|BundleBridgeNexus_15>outputs_0"
   },
   {
     "class":"firrtl.passes.InlineAnnotation",
-    "target":"RocketSystem.BundleBridgeNexus_17"
+    "target":"RocketSystem.BundleBridgeNexus_16"
   },
   {
     "class":"freechips.rocketchip.util.RegFieldDescMappingAnnotation",
@@ -26051,6 +25757,10 @@
     }
   },
   {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~RocketSystem|TLPUF>w"
+  },
+  {
     "class":"freechips.rocketchip.util.AddressMapAnnotation",
     "target":"RocketSystem.RocketSystem",
     "mapping":[
@@ -26104,6 +25814,22 @@
       },
       {
         "range":{
+          "base":131072,
+          "size":65536
+        },
+        "permissions":{
+          "r":true,
+          "w":false,
+          "x":true,
+          "c":false,
+          "a":false
+        },
+        "names":[
+          "puf@20000"
+        ]
+      },
+      {
+        "range":{
           "base":33554432,
           "size":65536
         },
@@ -26131,7 +25857,7 @@
           "a":true
         },
         "names":[
-          "cache-controller@2010000"
+          "memory-encryption-controller@2010000"
         ]
       },
       {
@@ -26176,7 +25902,7 @@
           "w":true,
           "x":true,
           "c":true,
-          "a":true
+          "a":false
         },
         "names":[
           "memory@80000000"
@@ -26239,6 +25965,22 @@
       },
       {
         "range":{
+          "base":131072,
+          "size":65536
+        },
+        "permissions":{
+          "r":true,
+          "w":false,
+          "x":true,
+          "c":false,
+          "a":false
+        },
+        "names":[
+          "puf@20000"
+        ]
+      },
+      {
+        "range":{
           "base":33554432,
           "size":65536
         },
@@ -26266,7 +26008,7 @@
           "a":true
         },
         "names":[
-          "cache-controller@2010000"
+          "memory-encryption-controller@2010000"
         ]
       },
       {
@@ -26311,7 +26053,7 @@
           "w":true,
           "x":true,
           "c":true,
-          "a":true
+          "a":false
         },
         "names":[
           "memory@80000000"
