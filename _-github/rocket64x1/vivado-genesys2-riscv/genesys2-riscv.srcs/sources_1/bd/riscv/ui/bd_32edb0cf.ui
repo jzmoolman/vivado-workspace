@@ -1,0 +1,64 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.518094",
+   "Default View_TopLeft":"-149,-122",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port ddr3_sdram -pg 1 -lvl 5 -x 1350 -y 110 -defaultsOSRD
+preplace port rgmii -pg 1 -lvl 5 -x 1350 -y 380 -defaultsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port port-id_eth_mdio_clock -pg 1 -lvl 5 -x 1350 -y 480 -defaultsOSRD
+preplace port port-id_eth_mdio_data -pg 1 -lvl 5 -x 1350 -y 500 -defaultsOSRD
+preplace port port-id_eth_mdio_int -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port port-id_eth_mdio_reset -pg 1 -lvl 5 -x 1350 -y 520 -defaultsOSRD
+preplace port port-id_fan_en -pg 1 -lvl 5 -x 1350 -y 540 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port port-id_sdio_cd -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port port-id_sdio_clk -pg 1 -lvl 5 -x 1350 -y 580 -defaultsOSRD
+preplace port port-id_sdio_cmd -pg 1 -lvl 5 -x 1350 -y 600 -defaultsOSRD
+preplace port port-id_sdio_reset -pg 1 -lvl 5 -x 1350 -y 640 -defaultsOSRD
+preplace port port-id_usb_uart_rxd -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_usb_uart_txd -pg 1 -lvl 5 -x 1350 -y 440 -defaultsOSRD
+preplace portBus sdio_dat -pg 1 -lvl 5 -x 1350 -y 620 -defaultsOSRD
+preplace inst DDR -pg 1 -lvl 4 -x 1160 -y 120 -defaultsOSRD
+preplace inst IO -pg 1 -lvl 4 -x 1160 -y 500 -defaultsOSRD
+preplace inst RocketChip -pg 1 -lvl 3 -x 790 -y 370 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 430 -y 320 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 150 -y 320 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 430 -y 460 -defaultsOSRD
+preplace netloc AXI_clock 1 2 2 620 250 980
+preplace netloc AXI_reset 1 3 1 990 100n
+preplace netloc IO_eth_mdio_clock 1 4 1 NJ 480
+preplace netloc IO_eth_mdio_data 1 4 1 NJ 500
+preplace netloc IO_eth_mdio_int 1 0 4 NJ 550 NJ 550 NJ 550 NJ
+preplace netloc IO_eth_mdio_reset 1 4 1 NJ 520
+preplace netloc IO_interrupts 1 2 3 630 690 NJ 690 1320
+preplace netloc IO_sdio_cd 1 0 4 NJ 570 NJ 570 NJ 570 NJ
+preplace netloc IO_sdio_clk 1 4 1 NJ 580
+preplace netloc IO_sdio_cmd 1 4 1 NJ 600
+preplace netloc IO_sdio_dat 1 4 1 NJ 620
+preplace netloc IO_sdio_reset 1 4 1 NJ 640
+preplace netloc IO_uart_rxd 1 0 5 NJ 520 NJ 520 NJ 520 1010J 300 1310
+preplace netloc IO_uart_txd 1 4 1 NJ 440
+preplace netloc clock_100MHz 1 2 2 600J 510 980
+preplace netloc clock_125MHz 1 2 2 580 530 990J
+preplace netloc clock_200MHz 1 2 2 590 540 1000
+preplace netloc clock_ok 1 2 2 610 140 NJ
+preplace netloc device_temp 1 3 2 1010 230 1330
+preplace netloc fan_en 1 4 1 NJ 540
+preplace netloc mem_ok 1 2 3 640 490 960J 290 1310
+preplace netloc reset_h 1 2 2 620 500 950
+preplace netloc reset_l 1 0 2 NJ 460 NJ
+preplace netloc sys_clock 1 1 1 NJ 320
+preplace netloc DDR_ddr3_sdram 1 4 1 NJ 110
+preplace netloc IO_RGMII 1 4 1 NJ 380
+preplace netloc MEM_AXI4 1 3 1 940 60n
+preplace netloc io_axi_m 1 2 3 640 240 NJ 240 1320
+preplace netloc io_axi_s 1 3 1 970 370n
+preplace netloc sys_diff_clock 1 0 1 NJ 320
+levelinfo -pg 1 0 150 430 790 1160 1350
+pagesize -pg 1 -db -bbox -sgen -150 0 1510 700
+"
+}
+

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jzmoolman/src/_-github/vivado-risc-v/workspace/rocket64x1/rocket.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synchronizer'
+INFO: [VRFC 10-3107] analyzing entity 'JtagSeries7'
+INFO: [VRFC 10-3107] analyzing entity 'Rocket64x1'
